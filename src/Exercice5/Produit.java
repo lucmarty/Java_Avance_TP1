@@ -14,7 +14,7 @@ public class Produit {
     }
 
     void afficher(double remise) {
-        System.out.println("Nom :" + this.nom + " Prix avec remise :" + this.prix * (remise / 100));
+        System.out.println("Nom :" + this.nom + " Prix avec remise :" + (this.prix - (this.prix * (remise / 100))));
     }
 
     void afficher(String devise) {
